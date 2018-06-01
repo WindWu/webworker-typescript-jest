@@ -1,1 +1,1 @@
-"# webworker-typescript-jest" 
+# webworker-typescript-jest

@@ -3,8 +3,13 @@
     "outDir": "./dist/",
     "sourceMap": true,
     "noImplicitAny": true,
-    "module": "es6",
+    "module": "esnext",
     "target": "es5",
+    "lib": [
+      "dom",
+      "es2015",
+      "es2015.promise"
+    ],
     "jsx": "react",
     "allowJs": true
   }
