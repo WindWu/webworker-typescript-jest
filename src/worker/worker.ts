@@ -1,4 +1,4 @@
-import * as _ from 'lodash'
+import * as _ from 'lodash';
 import Calculator from './calculator';
 
 const ctx: Worker = self as any;
@@ -7,7 +7,7 @@ const ctx: Worker = self as any;
 ctx.postMessage({ foo: _.join(['Hello', 'webpack']) });
 
 // Respond to message from parent thread
-ctx.addEventListener("message", (event) => {
+ctx.addEventListener('message', (event) => {
     console.log(event);
     const calc = new Calculator();
     const result = calc.add(event.data.a, event.data.b);

@@ -5,12 +5,20 @@
     "noImplicitAny": true,
     "module": "esnext",
     "target": "es5",
+    "esModuleInterop": true,
     "lib": [
       "dom",
       "es2015",
       "es2015.promise"
     ],
     "jsx": "react",
-    "allowJs": true
-  }
+    "allowJs": false
+  },
+  "include": [
+    "./src",
+    "./typings"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
